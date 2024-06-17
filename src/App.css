@@ -1,0 +1,99 @@
+.container--light {
+  height: 100vh;
+  background-color: #d5d5d4;
+}
+
+.container--dark {
+  height: 100vh;
+  background-color: #010213;
+}
+
+.nav--title{
+  margin-right: auto;
+  margin-top: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+.toggler--dark {
+  color: #04010e;
+}
+
+nav {
+  display: flex;
+  align-items: end;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  height: 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+nav.dark {
+  background-color: #030111;
+}
+
+nav.dark .toggler--light {
+  color: #dfdde7;
+}
+
+nav.dark .toggler--dark {
+  color: #dfdde7;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+nav.dark .nav--title {
+  color: azure;
+}
+
+main.dark {
+  background-color: #04010e;
+  color: antiquewhite;
+}
