@@ -1,0 +1,99 @@
+.title {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.daily--item--white {
+    background-color: #f5f5f5;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.daily--item--dark {
+    background-color: #111324;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.icon--small {
+    width: 40px;
+}
+
+.day--light {
+    font-family: "Montserrat", sans-serif;
+    flex: 1 1;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.day--dark {
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+    flex: 1 1;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.description--light {
+    flex: 1 1;
+    font-style: italic ;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.description--dark {
+    color: azure;
+    flex: 1 1;
+    font-style: italic ;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.min-max--light {
+    color: #757575;
+    font-style: italic;
+}
+
+.min-max--dark {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+.daily--grid {
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    row-gap: 0;
+    column-gap: 15px;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding: 5px 15px;
+}
+
+.grid--item--dark, .grid--item--light {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.grid--item--light label:first-child {
+    color: #757575;
+}
+.grid--item--dark label:first-child {
+    color: rgba(255, 255, 255, 0.75
+    );
+}
+.grid--item--dark label:last-child {
+    color: azure;
+}

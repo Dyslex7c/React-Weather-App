@@ -1,7 +1,6 @@
 import "./current-weather.css"
 
 const CurrentWeather = (props) => {
-    console.log(props.data)
     return (
         props.data &&
         <div className={props.darkMode ? "weather--dark" : "weather--light"}>
@@ -10,7 +9,7 @@ const CurrentWeather = (props) => {
                     <p className="city">{props.data.city}</p>
                     <p className="weather--description">{props.data.weather[0].description}</p>
                 </div>
-                <img alt="weather" className="weather--icon" src={`icon/${props.data.weather[0].icon}.png`} />
+                <img alt="weather" className="weather--icon" src={props.darkMode ? `icon/d${props.data.weather[0].icon}.png` : `icon/${props.data.weather[0].icon}.png`} />
             </div>
             <div className="bottom">
                 <p className="temperature">{Math.round(props.data.main.temp)}°C</p>

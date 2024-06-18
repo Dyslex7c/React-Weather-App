@@ -4,6 +4,7 @@ import Search from './components/search/search';
 import Navbar from './components/search/navbar';
 import CurrentWeather from './components/current-weather/current-weather';
 import { WEATHER_API_URL, WEATHER_API_KEY } from './components/search/api';
+import Forecast from './components/forecast/forecast';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -31,6 +32,8 @@ function App() {
 
   }
 
+  console.log(forecast)
+
   return (
     <div className={darkMode ? "container--dark" : "container--light"}>
       <Navbar
@@ -40,10 +43,14 @@ function App() {
       <Search
       darkMode={darkMode} 
       onSearchChange={handleOnSearchChange} />
-      <CurrentWeather
+      {currentWeather && <CurrentWeather
       darkMode={darkMode}
       data={currentWeather}
-      />
+      />}
+      {forecast && <Forecast
+      darkMode={darkMode}
+      data={forecast}
+      />}
     </div>
   );
 }
