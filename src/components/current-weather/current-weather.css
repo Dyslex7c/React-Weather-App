@@ -7,6 +7,9 @@
     background-color: #000000;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .weather--light {
@@ -18,6 +21,9 @@
     background-color: rgb(203, 217, 255);
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .top, .bottom {
@@ -73,4 +79,14 @@
     text-align: right;
     font-weight: 600;
     font-size: 16px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

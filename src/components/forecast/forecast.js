@@ -9,7 +9,7 @@ const Forecast = (props) => {
     console.log(forecastDays)
     return (
     <>
-        <label className="title">Daily</label>
+        <label className={props.darkMode ? "title--dark" : "title--light"}>Daily</label>
         <Accordion allowZeroExpanded>
             {props.data.list.slice(0, 7).map((item, idx) => (
                 <AccordionItem key={idx}>

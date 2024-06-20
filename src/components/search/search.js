@@ -36,6 +36,7 @@ const Search = (props) => {
         placeholder: (defaultStyles) => ({
             ...defaultStyles,
             color: props.darkMode ? "white" : "black",
+            zIndex: 1,
         }),
         input: (defaultStyles) => ({
             ...defaultStyles,
@@ -44,6 +45,7 @@ const Search = (props) => {
         singleValue: (defaultStyles) => ({
             ...defaultStyles,
             color: props.darkMode ? "white" : "black",
+            zIndex: 1,
         }),
         menu: (defaultStyles) => ({
             ...defaultStyles,
