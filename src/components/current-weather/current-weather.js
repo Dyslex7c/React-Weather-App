@@ -18,19 +18,23 @@ const CurrentWeather = (props) => {
                         <span className="parameter--label">Details</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Feels like</span>
+                        <span className="parameter--label">Feels like⠀<i class="bi bi-thermometer-half"></i></span>
+                        
                         <span className="parameter--value">{Math.round(props.data.main.feels_like)}°C</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Wind</span>
+                        <span className="parameter--label">Wind⠀⠀⠀⠀<i class="bi bi-wind"></i></span>
+                        
                         <span className="parameter--value">{props.data.wind["speed"]} m/s</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Humidity</span>
+                        <span className="parameter--label">Humidity⠀<i className="bi bi-moisture"></i></span>
+                        
                         <span className="parameter--value">{props.data.main.humidity}%</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Pressure</span>
+                        <span className="parameter--label">Pressure⠀ <i class="bi bi-speedometer"></i></span>
+                        
                         <span className="parameter--value">{props.data.main.pressure} hPa</span>
                     </div>
                 </div>

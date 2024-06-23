@@ -1,14 +1,16 @@
 .title--light {
-    font-size: 23px;
+    font-size: 18.4px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
+    margin-left: 5px;
 }
 
 .title--dark {
-    font-size: 23px;
+    font-size: 18.4px;
     font-weight: 700;
     color: azure;
     font-family: "Montserrat", sans-serif;
+    margin-left: 5px;
 }
 
 .accordion__panel {
@@ -18,22 +20,22 @@
 }
 
 .daily--item--white {
-    background-color: #f5f5f5;
-    height: 40px;
+    background-color: rgba(255, 255, 255, 0.35);
+    height: 27px;
     margin: 5px;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 11.2px;
     padding: 5px 20px;
 }
 
 .daily--item--dark {
-    background-color: #111324;
-    height: 40px;
+    background-color: rgb(0, 0, 0, 0.35);
+    height: 27px;
     margin: 5px;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 11.2px;
     padding: 5px 20px;
 }
 
@@ -42,7 +44,11 @@
 }
 
 .icon--small {
-    width: 40px;
+    width: 32px;
+}
+
+img.icon--small {
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .day--light {
@@ -50,6 +56,7 @@
     flex: 1 1;
     font-weight: 600;
     margin-left: 16px;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .day--dark {
@@ -58,31 +65,41 @@
     flex: 1 1;
     font-weight: 600;
     margin-left: 16px;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .description--light {
     flex: 1 1;
+    font-family: "Noto Sans", sans-serif;
     font-style: italic ;
+    margin-left: 10px;
     margin-right: 15px;
     text-align: right;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .description--dark {
     color: azure;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    margin-left: 10px;
     flex: 1 1;
     font-style: italic ;
     margin-right: 15px;
     text-align: right;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .min-max--light {
     color: #757575;
     font-style: italic;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .min-max--dark {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(198, 212, 212);
     font-style: italic;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 .daily--grid {
@@ -101,19 +118,34 @@
 .grid--item--dark, .grid--item--light {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 24px;
     justify-content: space-between;
+    backdrop-filter: blur(10px);
 }
 
 .grid--item--light label:first-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: smaller;
     color: #757575;
+
+}
+.grid--item--light label:last-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: smaller;
+
 }
 .grid--item--dark label:first-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: smaller;
     color: rgba(255, 255, 255, 0.75
     );
+
 }
 .grid--item--dark label:last-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: smaller;
     color: azure;
+
 }
 
 @keyframes fadeInAnimation {

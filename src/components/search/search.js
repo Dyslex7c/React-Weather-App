@@ -8,7 +8,7 @@ const Search = (props) => {
 
     const loadOptions = async (inputValue) => {
         const response = await fetch(
-        `${GEO_API_URL}/cities?minPopulation=10000&namePrefix=${inputValue}`,
+        `${GEO_API_URL}/cities?minPopulation=1000&namePrefix=${inputValue}`,
         geoAPIOptions
       )
       const response_1 = await response.json()
@@ -30,7 +30,7 @@ const Search = (props) => {
     const customStyles = {
         control: (defaultStyles) => ({
             ...defaultStyles,
-            backgroundColor: props.darkMode ? "black" : "white",
+            backgroundColor: props.darkMode ? "rgb(0, 0, 0, 0)" : "rgb(255, 255, 255)",
           
         }),
         placeholder: (defaultStyles) => ({
@@ -49,14 +49,14 @@ const Search = (props) => {
         }),
         menu: (defaultStyles) => ({
             ...defaultStyles,
-            backgroundColor: props.darkMode ? "black" : "white",
+            backgroundColor: "rgb(0, 0, 0, 0)"
         }),
         option: (defaultStyles, state) => ({
             ...defaultStyles,
-            backgroundColor: props.darkMode ? (state.isFocused ? "#0051ff" : "black") : (state.isFocused ? "#dfd6ff" : "white"),
+            backgroundColor: props.darkMode ? (state.isFocused ? "rgb(255, 255, 255, 0.15)" : "rgb(0, 0, 0, 0)") : (state.isFocused ? "rgb(0, 0, 0, 0.15)" : "rgb(0, 0, 0, 0)"),
             color: props.darkMode ? "white" : "black",
             "&:hover":{
-                backgroundColor: props.darkMode ? "#0051ff" : "#dfd6ff"
+                backgroundColor: props.darkMode ? "rgb(255, 255, 255, 0.15)" : "rgb(0, 0, 0, 0.15)"
             },
         }),
         
