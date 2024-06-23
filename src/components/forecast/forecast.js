@@ -6,7 +6,6 @@ const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const Forecast = (props) => {
     const currentDay = new Date().getDay();
     const forecastDays = DAYS.slice(currentDay+1, DAYS.length).concat(DAYS.slice(0, currentDay+1));
-    console.log(forecastDays)
     return (
     <>
         <label className={props.darkMode ? "title--dark" : "title--light"}>Daily</label>
