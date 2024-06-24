@@ -15,27 +15,27 @@ const CurrentWeather = (props) => {
                 <p className="temperature">{Math.round(props.data.main.temp)}°C</p>
                 <div className="details">
                     <div className="parameter--row">
-                        <span className="parameter--label">Details</span>
+                        <span className={props.darkMode ? "parameter--label--dark" : "parameter--label--light"}>Details</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Feels like⠀<i class="bi bi-thermometer-half"></i></span>
+                        <span className={props.darkMode ? "parameter--label--dark" : "parameter--label--light"}>Feels like⠀<i class="bi bi-thermometer-half"></i></span>
                         
-                        <span className="parameter--value">{Math.round(props.data.main.feels_like)}°C</span>
+                        <span className={props.darkMode ? "parameter--value--dark" : "parameter--value--light"}>{Math.round(props.data.main.feels_like)}°C</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Wind⠀⠀⠀⠀<i class="bi bi-wind"></i></span>
+                        <span className={props.darkMode ? "parameter--label--dark" : "parameter--label--light"}>Wind⠀⠀⠀⠀<i class="bi bi-wind"></i></span>
                         
-                        <span className="parameter--value">{props.data.wind["speed"]} m/s</span>
+                        <span className={props.darkMode ? "parameter--value--dark" : "parameter--value--light"}>{props.data.wind["speed"]} m/s</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Humidity⠀<i className="bi bi-moisture"></i></span>
+                        <span className={props.darkMode ? "parameter--label--dark" : "parameter--label--light"}>Humidity⠀<i className="bi bi-moisture"></i></span>
                         
-                        <span className="parameter--value">{props.data.main.humidity}%</span>
+                        <span className={props.darkMode ? "parameter--value--dark" : "parameter--value--light"}>{props.data.main.humidity}%</span>
                     </div>
                     <div className="parameter--row">
-                        <span className="parameter--label">Pressure⠀ <i class="bi bi-speedometer"></i></span>
+                        <span className={props.darkMode ? "parameter--label--dark" : "parameter--label--light"}>Pressure⠀ <i class="bi bi-speedometer"></i></span>
                         
-                        <span className="parameter--value">{props.data.main.pressure} hPa</span>
+                        <span className={props.darkMode ? "parameter--value--dark" : "parameter--value--light"}>{props.data.main.pressure} hPa</span>
                     </div>
                 </div>
             </div>

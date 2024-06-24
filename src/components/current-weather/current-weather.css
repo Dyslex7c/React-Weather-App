@@ -73,18 +73,28 @@
     justify-content: space-between;
 }
 
-.parameter--label {
+.parameter--label--dark, .parameter--label--light {
     font-family: "Noto Sans", sans-serif;
-    font-weight: 300;
     text-align: left;
     font-size: 12.8px;
 }
 
-.parameter--value {
+.parameter--value--dark, .parameter--value--light {
     font-family: "Noto Sans", sans-serif;
-    font-weight: 200;
     text-align: right;
     font-size: 12.8px;
+}
+
+.parameter--value--light{
+    font-weight: 300;
+}
+
+.parameter--label--dark{
+    font-weight: 300;
+}
+
+.parameter--value--dark{
+    font-weight: 200;
 }
 
 @keyframes fadeInAnimation {
