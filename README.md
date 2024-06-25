@@ -4,7 +4,7 @@
 <a><img align = "center" src = "https://i.imgur.com/dq2JVwT.png" width = "50px"></a>
 <a><img align = "center" src = "https://i.imgur.com/eYtLGWn.png" width = "50px"></a>
 
-A weather app made using react.js which shows real-time weather forecast for user's current location as well as any location looked up by the user. It uses Rapid API and OpenWeatherMap API. It also consists of a toggle button to enable the user to switch between light and dark mode. 
+A weather app made using React JS which shows real-time weather forecast for user's current location as well as any location looked up by the user. It uses Rapid API and OpenWeatherMap API. It also consists of a toggle button to enable the user to switch between light and dark mode. 
 
 Upon viewing this react-app, the app prompts the user requesting for their general location. If access is granted, the app shows weather forecast based on the user's current location. If, however, access is denied, the app sits idle.
 
@@ -17,3 +17,10 @@ The present-day weather is displayed in a box which shows temperature, descripti
 Apart from the user's current location, the app can also display weather forecast of a city the user has searched for. A component called `AsyncPaginate` imported from `react-select-async-paginate` library has been used for creating this search bar. The user can search for cities all around the globe having a minimum population of 1000 and infer its climate.
 
 ![screenshot3](https://github.com/Dyslex7c/React-Weather-App/assets/98543992/9753c0d2-7d1d-4fd9-b760-3f70d92e6225)
+
+## Credits
+<a href="https://youtu.be/Reny0cTTv24?si=7nP-Ls7GiSMuBUGy">Slobodan Gajic - Weather App</a>
+
+<a href="https://youtu.be/bMknfKXIFA8?si=EgoLCwQB0jSA2jYh">React course by Bob Ziroll</a>
+
+<a href="https://www.flaticon.com/free-icons/app" title="app icons">Document icon created by Freepik - Flaticon</a>
