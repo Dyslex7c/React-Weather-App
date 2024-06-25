@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from "react"
+import { useState, useMemo } from "react"
 import Search from './components/search/search';
 import Navbar from './components/search/navbar';
 import CurrentWeather from './components/current-weather/current-weather';
@@ -11,6 +11,14 @@ function App() {
   function toggleDarkMode(){
     setDarkMode(prevMode => !prevMode)
   }
+
+  const suffixlight = useMemo(() => {
+    return Math.floor(Math.random()*10);
+   },[]);
+
+   const suffixdark = useMemo(() => {
+    return Math.floor(Math.random()*10);
+   },[]);
 
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
@@ -57,7 +65,7 @@ function App() {
   }
 
   return (
-    <div className={darkMode ? "container--dark" : "container--light"}>
+    <div className={darkMode ? "container--dark-"+suffixdark : "container--light-"+suffixlight}> 
       <Navbar
        darkMode = {darkMode} 
        toggleDarkMode = {toggleDarkMode}

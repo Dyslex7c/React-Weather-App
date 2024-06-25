@@ -91,7 +91,7 @@ img.icon--small {
 }
 
 .min-max--light {
-    color: #757575;
+    color: #000000;
     font-style: italic;
     background-color: rgb(0, 0, 0, 0);
 }
@@ -126,7 +126,7 @@ img.icon--small {
 .grid--item--light label:first-child {
     font-family: "Noto Sans", sans-serif;
     font-size: smaller;
-    color: #757575;
+    color: #000000;
 
 }
 .grid--item--light label:last-child {

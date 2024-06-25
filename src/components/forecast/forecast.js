@@ -25,27 +25,27 @@ const Forecast = (props) => {
                     <AccordionItemPanel>
                         <div className="daily--grid">
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Pressure</label>
+                                <label>Pressure⠀<i className="bi bi-speedometer"></i></label>
                                 <label>{item.main.pressure} hPa</label>
                             </div>
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Humidity</label>
+                                <label>Humidity⠀⠀⠀ <i className="bi bi-moisture"></i></label>
                                 <label>{item.main.humidity}%</label>
                             </div>
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Clouds</label>
+                                <label>Clouds⠀⠀ <i className="bi bi-clouds"></i></label>
                                 <label>{item.clouds.all}%</label>
                             </div>
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Wind Speed</label>
+                                <label>Wind Speed⠀ <i className="bi bi-wind"></i></label>
                                 <label>{item.wind["speed"]} m/s</label>
                             </div>
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Sea level</label>
+                                <label>Sea level⠀<i className="bi bi-water"></i></label>
                                 <label>{item.main.sea_level}m</label>
                             </div>
                             <div className={props.darkMode ? "grid--item--dark" : "grid--item--light"}>
-                                <label>Feels Like</label>
+                                <label>Feels Like⠀⠀⠀<i className="bi bi-thermometer-half"></i></label>
                                 <label>{Math.round(item.main.feels_like)}°C</label>
                             </div>
                         </div>
