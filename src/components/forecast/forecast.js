@@ -14,7 +14,7 @@ const Forecast = (props) => {
                 <AccordionItem key={idx}>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            <div className={props.darkMode ? "daily--item--dark" : "daily--item--white"}>
+                            <div className={props.darkMode ? (idx === 6 ? "daily--item--dark1" : "daily--item--dark") : (idx === 6 ? "daily--item--white1" : "daily--item--white")}>
                                 <img alt="weather" className="icon--small" src={props.darkMode ? `icon/d${item.weather[0].icon}.png` : `icon/${item.weather[0].icon}.png`}/>
                                 <label className={props.darkMode ? "day--dark" : "day--light"}>{forecastDays[idx]}</label>
                                 <label className={props.darkMode ? "description--dark" : "description--light"}>{item.weather[0].description}</label>
