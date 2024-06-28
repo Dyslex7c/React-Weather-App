@@ -6,7 +6,7 @@
 
 A weather app made using React JS which shows real-time weather forecast for user's current location as well as any location looked up by the user. It uses Rapid API and OpenWeatherMap API. It also consists of a toggle button to enable the user to switch between light and dark mode. 
 
-Upon viewing this react-app, the app prompts the user requesting for their general location. If access is granted, the app shows weather forecast based on the user's current location. If, however, access is denied, the app sits idle.
+Upon viewing this react-app, the app prompts the user requesting for their general location. If access is granted, the app shows weather forecast based on the user's current location. If, however, access is denied, the app sits idle until the user starts interacting.
 
 ![screenshot1](https://github.com/Dyslex7c/React-Weather-App/assets/98543992/3508f736-2731-4a93-b6ec-ac7e8bac5c8b)
 
