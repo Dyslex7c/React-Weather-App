@@ -255,7 +255,7 @@ main.dark {
 
 /*
 .css-1jl2nnn-menu, .css-an2ocs-singleValue, .css-p4kzcr-Input{
-  font-weight: "Noto Sans", sans-serif;
+  font-weight: "Noto Sans", sans-serif !important;
   font-size: 12px;
 }
 */
