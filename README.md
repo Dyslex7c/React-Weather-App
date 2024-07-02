@@ -4,7 +4,7 @@
 <a><img align = "center" src = "https://i.imgur.com/dq2JVwT.png" width = "50px"></a>
 <a><img align = "center" src = "https://i.imgur.com/eYtLGWn.png" width = "50px"></a>
 
-A weather app made using React JS which shows real-time weather forecast for user's current location as well as any location looked up by the user. It uses Rapid API and OpenWeatherMap API. It also consists of a toggle button to enable the user to switch between light and dark mode. 
+A weather app made using React JS which shows real-time weather forecast for user's current location as well as any worldwide location looked up by the user. It uses Rapid API and OpenWeatherMap API. It also consists of a toggle button to enable the user to switch between light and dark mode. 
 
 Upon viewing this react-app, the app prompts the user requesting for their general location. If access is granted, the app shows weather forecast based on the user's current location. If, however, access is denied, the app sits idle until the user starts interacting.
 
